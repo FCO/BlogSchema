@@ -8,7 +8,9 @@
   "build-depends": [],
   "test-depends": [],
   "provides": {
-    "Comment": "lib/Comment.pm6"
+    "Comment": "lib/Comment.pm6",
+    "PostTag": "lib/PostTag.pm6",
+    "Tag": "lib/Tag.pm6"
   },
   "resources": [],
   "license": "Write me!",

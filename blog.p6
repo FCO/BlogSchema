@@ -18,6 +18,9 @@ multi MAIN("new-person", :$name!) {
 
 multi MAIN("new-post", Str :$author!, Str :$title!) {
     my $body = $*IN.slurp;
+#    for (@tags (-) Tag.^all.grep(*.name in @tag).map: *.name).keys -> $name {
+#        Tag.^create: :$name
+#    }
     with Person.^load(:name($author)) {
         .say with .posts.create: :$title, :$body
     } else {
@@ -27,4 +30,29 @@ multi MAIN("new-post", Str :$author!, Str :$title!) {
 
 multi MAIN("list-posts") {
     .say for Post.^all
+}
+
+multi MAIN("comment", Str :$author!, UInt :$post!) {
+    my $body = $*IN.slurp;
+    with Person.^load(:name($author)) -> $author {
+        .say with Post.^load($post).comments.create: :$body, :$author
+    } else {
+        die "Could not find $author"
+    }
+}
+
+multi MAIN("list-comments", UInt :$post!) {
+    with Post.^load($post) {
+        .say for .comments
+    } else {
+        die "Could not find post id $post"
+    }
+}
+
+multi MAIN("list-comments", Str :$author!) {
+    with Person.^load(:name($author)) {
+        .say for .comments
+    } else {
+        die "Could not find $author"
+    }
 }
