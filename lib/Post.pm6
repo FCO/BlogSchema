@@ -18,8 +18,8 @@ method delete {
     self.^save
 }
 
-#method update is before-update {
-#    $!updated = now
-#}
+method update is before-update {
+    $!updated .= now
+}
 
 method tags { flat @!post-tags.map: *.tag.name }
