@@ -1,6 +1,9 @@
 use Red;
+use Post;
 
 unit model Tag;
 
 has Str $.name  is id;
-has     @.posts is relationship({ .tag }, :model<Post> )
+has     @.post-tags is relationship({ .tag-id }, :model<PostTag> );
+
+method posts { @!post-tags.Seq.map: *.post }
