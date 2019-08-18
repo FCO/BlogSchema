@@ -15,6 +15,8 @@ Tag.^create-table: :if-not-exists;
 PostTag.^create-table: :if-not-exists;
 
 my %*SUB-MAIN-OPTS = :named-anywhere;
+my $*RED-DEBUG = so %*ENV<RED_DEBUG>;
+
 
 multi MAIN("new-person", :$name!) {
     .say with Person.^create: :$name
@@ -87,4 +89,8 @@ multi MAIN("list-tags", UInt :$post) {
     } else {
         Tag.^all
     }
+}
+
+multi MAIN("search-posts", Str $key-word) {
+    .say for Post.^all.grep: { .title.contains($key-word) || .body.contains($key-word) }
 }
