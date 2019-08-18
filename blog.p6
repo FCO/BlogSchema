@@ -11,7 +11,7 @@ my $*RED-DB = database "SQLite", :database<./blog.db>;
 Person.^create-table:  :if-not-exists;
 Post.^create-table:    :if-not-exists;
 Comment.^create-table: :if-not-exists;
-Tag.^create-table: :if-not-exists;
+Tag.^create-table:     :if-not-exists;
 PostTag.^create-table: :if-not-exists;
 
 my %*SUB-MAIN-OPTS = :named-anywhere;
