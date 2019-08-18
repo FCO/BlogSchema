@@ -24,9 +24,6 @@ multi MAIN("new-person", :$name!) {
 
 multi MAIN("new-post", Str :$author!, Str :$title!) {
     my $body = $*IN.slurp;
-#    for (@tags (-) Tag.^all.grep(*.name in @tag).map: *.name).keys -> $name {
-#        Tag.^create: :$name
-#    }
     with Person.^load(:name($author)) {
         .say with .posts.create: :$title, :$body
     } else {
