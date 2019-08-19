@@ -89,5 +89,7 @@ multi MAIN("list-tags", UInt :$post) {
 }
 
 multi MAIN("search-posts", Str $key-word) {
-    .say for Post.^all.grep: { .title.contains($key-word) || .body.contains($key-word) }
+    .say for Post.^all.grep: {
+        .title.contains($key-word) || .body.contains($key-word)
+    }
 }

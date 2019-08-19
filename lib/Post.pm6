@@ -14,12 +14,12 @@ has             @.comments  is relationship({ .post-id   }, :model<Comment>);
 has             @.post-tags is relationship({ .post-id   }, :model<PostTag>);
 
 method delete {
-    $!deleted = now;
+    self.deleted = now;
     self.^save
 }
 
 method update is before-update {
-    $!updated .= now
+    self.updated .= now
 }
 
-method tags { flat @!post-tags.map: *.tag.name }
+method tags { flat self.post-tags.map: *.tag.name }
