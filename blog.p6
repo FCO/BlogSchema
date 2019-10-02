@@ -22,12 +22,21 @@ multi MAIN("new-person", :$name!) {
     .say with Person.^create: :$name
 }
 
-multi MAIN("new-post", Str :$author!, Str :$title!) {
+multi MAIN("new-post", Str :$author!, Str :$title!, Bool :$publish) {
     my $body = $*IN.slurp;
     with Person.^load(:name($author)) {
-        .say with .posts.create: :$title, :$body
+        .say with .posts.create: :$title, :$body, |(:$publish if $publish)
     } else {
         die "Could not find $author"
+    }
+}
+
+multi MAIN("publish-post", UInt $post) {
+    with Post.^load: $post -> $post {
+        $post.publish;
+        $post.say;
+    } else {
+        die "Could not find post $post"
     }
 }
 
@@ -43,12 +52,16 @@ multi MAIN("edit-post", UInt $post, Str :$author, Str :$title, Str :$tag) {
     }
 }
 
-multi MAIN("list-posts", Str :$tag) {
-    .say for do with $tag {
+multi MAIN("list-posts", Str :$tag, Bool :$published) {
+    my $seq = do with $tag {
         .posts with Tag.^load: $tag
     } else {
         Post.^all
     }
+    if $published {
+        $seq .= grep: so *.published
+    }
+    .say for $seq<>
 }
 
 multi MAIN("comment", Str :$author!, UInt :$post!) {
@@ -88,8 +101,10 @@ multi MAIN("list-tags", UInt :$post) {
     }
 }
 
-multi MAIN("search-posts", Str $key-word) {
-    .say for Post.^all.grep: {
+multi MAIN("search-posts", Str $key-word, Bool :$published) {
+    my $seq = Post.^all;
+    $seq .= grep: so *.published if $published;
+    .say for $seq.grep: {
         .title.contains($key-word) || .body.contains($key-word)
     }
 }

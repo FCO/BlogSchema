@@ -9,12 +9,18 @@ has Str         $.body      is column;
 has DateTime    $.created   is column .= now;
 has DateTime    $.updated   is column .= now;
 has DateTime    $.deleted   is column{ :nullable };
+has DateTime    $.published is column{ :nullable };
 has             $.author    is relationship({ .author-id }, :model<Person> );
 has             @.comments  is relationship({ .post-id   }, :model<Comment>);
 has             @.post-tags is relationship({ .post-id   }, :model<PostTag>);
 
 method delete {
-    self.deleted = now;
+    self.deleted .= now;
+    self.^save
+}
+
+method publish {
+    self.published .= now;
     self.^save
 }
 
