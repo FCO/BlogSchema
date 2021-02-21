@@ -1,8 +1,8 @@
 # BlogSchema
 
 This is an example of how easy it is to use [Red](https://github.com/FCO/Red) and [Raku](https://raku.org)
-to develop a DB schema for a simple blog. It do not serves or generates the blog's pages.
-It's only the database schema.
+to develop a DB schema for a simple blog. It does not serve or generates the blog's pages.
+It only creates the database schema and provides introspection into the database.
 
 ## Usage:
 ```
@@ -32,8 +32,8 @@ It uses a few models to describe a DB schema for a blog.
   Describes a person, it could be a Post's author or a Comment's author.
   
 - [Post](https://github.com/FCO/BlogSchema/blob/master/lib/Post.pm6)
-  Describes a post, it's related to `Person` throw the `author` relationship,
-  `Comment` throw the `comments` relationship
+  Describes a post, it's related to `Person` through the `author` relationship,
+  `Comment` through the `comments` relationship
   and a N-M relationship for `Tag` (using N-1 `post-tags`) called `tags`.
   
 - [Tag](https://github.com/FCO/BlogSchema/blob/master/lib/Tag.pm6)
