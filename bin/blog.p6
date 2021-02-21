@@ -26,7 +26,7 @@ multi MAIN("create-db", Bool :$populate) {
     blog-schema.models.values.map: *.^populate if $populate
 }
 
-multi MAIN("new-person", :$name!) {
+multi MAIN("new-person", Str :$name!) {
     .say with blog-schema.Person.^create: :$name
 }
 

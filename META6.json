@@ -1,10 +1,11 @@
 {
-  "name": "Coment",
-  "description": "Write me!",
+  "name": "BlogSchema",
+  "description": "BlogSchema using RedORM",
   "version": "0.1",
   "perl": "6.*",
-  "auth": "Write me!",
+  "auth": ":github<FCO>",
   "depends": [
+    "Red",
     "JSON::Fast"
   ],
   "build-depends": [],
@@ -19,6 +20,6 @@
     "Schema": "lib/Schema.pm6"
   },
   "resources": [],
-  "license": "Write me!",
-  "source-url": "Write me!"
+  "license": "Artistic",
+  "source-url": "https://github.com/FCO/BlogSchema"
 }
