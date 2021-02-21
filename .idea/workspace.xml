@@ -1,155 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="102ebf5c-4ff8-44cb-8770-64e4d5f06d72" name="Default Changelist" comment="">
+    <list default="true" id="102ebf5c-4ff8-44cb-8770-64e4d5f06d72" name="Default Changelist" comment="Remove comments">
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/15/153D7A58B3A3E898FCBDD04C462AF308414BD09D" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/15/153D7A58B3A3E898FCBDD04C462AF308414BD09D.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/15/153D7A58B3A3E898FCBDD04C462AF308414BD09D.repo-id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/29/2901451705F913894DA8D6D130E4C3188988A2FA.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/29/2901451705F913894DA8D6D130E4C3188988A2FA.repo-id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/78/7858AC3FF63354F37161BD349EFE11EDD13B89CB" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/78/7858AC3FF63354F37161BD349EFE11EDD13B89CB.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/78/7858AC3FF63354F37161BD349EFE11EDD13B89CB.repo-id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/8C/8C41AE88467FE5BBAD09FCD488662B25C3EC5333" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/8C/8C41AE88467FE5BBAD09FCD488662B25C3EC5333.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/8C/8C41AE88467FE5BBAD09FCD488662B25C3EC5333.repo-id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/98/982963C1C41CBED8CAB073724749592FE35C532B" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/98/982963C1C41CBED8CAB073724749592FE35C532B.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/98/982963C1C41CBED8CAB073724749592FE35C532B.repo-id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/A0/A0C29549E08238E42530C06E13C8A58A4E06FA41" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/A0/A0C29549E08238E42530C06E13C8A58A4E06FA41.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/A0/A0C29549E08238E42530C06E13C8A58A4E06FA41.repo-id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/AF/AF085A9A0FE77534D14589426C9EB187E4CDBE87.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/AF/AF085A9A0FE77534D14589426C9EB187E4CDBE87.repo-id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/B5/B5230ECDF4E78F0DD162281A0A78C6CDC853CBE8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/B5/B5230ECDF4E78F0DD162281A0A78C6CDC853CBE8.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/B5/B5230ECDF4E78F0DD162281A0A78C6CDC853CBE8.repo-id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/DC/DCB20F8D9AB21EED14574D2697A1C56267417BBA.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/DC/DCB20F8D9AB21EED14574D2697A1C56267417BBA.repo-id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/E2/E26EE902B286B96AC1A66AF63D289D48A1BF3D0F" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/E2/E26EE902B286B96AC1A66AF63D289D48A1BF3D0F.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/E2/E26EE902B286B96AC1A66AF63D289D48A1BF3D0F.repo-id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/FD/FD9856D80B50A44568F355BE0C3672CDBA9C644D.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.precomp/7011F868022706D0DB123C03898593E0AB8D8AF3/FD/FD9856D80B50A44568F355BE0C3672CDBA9C644D.repo-id" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Person.pm6">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Post.pm6">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Tag.pm6">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/PostTag.pm6">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Comment.pm6">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog.p6">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Person.pm6" />
-        <option value="$PROJECT_DIR$/Post.pm6" />
-        <option value="$PROJECT_DIR$/Coment.pm6" />
-        <option value="$PROJECT_DIR$/lib/Coment.pm6" />
-        <option value="$PROJECT_DIR$/lib/Comment" />
-        <option value="$PROJECT_DIR$/lib/Comment.pm6" />
-        <option value="$PROJECT_DIR$/lib/Person.pm6" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/lib/PostTag.pm6" />
-        <option value="$PROJECT_DIR$/lib/Post.pm6" />
-        <option value="$PROJECT_DIR$/lib/Tag.pm6" />
-        <option value="$PROJECT_DIR$/blog.p6" />
-      </list>
-    </option>
+  <component name="ProjectId" id="1onAaiSdtzIBRv60bOkmWvBBR4U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="blog-schema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-schema" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog-schema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-schema" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bin" />
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -175,88 +88,66 @@
       <option name="project" value="LOCAL" />
       <updated>1566155613062</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="N-M relationship to tag-post&#10;Schema module&#10;some fixes">
+      <created>1613918824103</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613918824103</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update README&#10;Update META6.json">
+      <created>1613919659961</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613919659961</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix config.&#10;Improve README&#10;Improve USAGE">
+      <created>1613948459011</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613948459011</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fix indent" />
+    <MESSAGE value="N-M relationship to tag-post&#10;Schema module&#10;some fixes" />
     <MESSAGE value="Remove comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove comments" />
+    <MESSAGE value="Update README&#10;Update META6.json" />
+    <MESSAGE value="Fix config.&#10;Improve README&#10;Improve USAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix config.&#10;Improve README&#10;Improve USAGE" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/META6.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Person.pm6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Post.pm6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Tag.pm6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/PostTag.pm6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Comment.pm6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog.p6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613921475002">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1613921475002" />
+    <state x="278" y="21" key="CommitChangelistDialog2" timestamp="1613948458463">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="278" y="21" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1613948458463" />
+    <state x="508" y="209" key="FileChooserDialogImpl" timestamp="1613912832499">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="508" y="209" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1613912832499" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1613948483354">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613948483354" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="perl6LineBreakpoint">
+          <url>file://$PROJECT_DIR$/lib/Post.pm6</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

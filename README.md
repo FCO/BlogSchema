@@ -13,6 +13,9 @@ Usage:
   bin/blog.p6 create-tag <name> -- Creates a new tag
   bin/blog.p6 list-tags [--post=<UInt>] -- Lists all tags. Filter by post.
   bin/blog.p6 search-posts <key-word> [--published] -- Searches by a post.
+  bin/blog.p6 get-config
+  bin/blog.p6 get-config <key>
+  bin/blog.p6 set-config <key> <value>
 ```
 
 It uses a few models to describe a DB schema for a blog.
