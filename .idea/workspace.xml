@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="102ebf5c-4ff8-44cb-8770-64e4d5f06d72" name="Default Changelist" comment="Remove comments">
+    <list default="true" id="102ebf5c-4ff8-44cb-8770-64e4d5f06d72" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613948571700</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add BlogConfig to the README.md">
+      <created>1613949419689</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1613949419689</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -96,25 +104,26 @@
     <MESSAGE value="Update README&#10;Update META6.json" />
     <MESSAGE value="Fix config.&#10;Improve README&#10;Improve USAGE" />
     <MESSAGE value="Remove comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove comments" />
+    <MESSAGE value="Add BlogConfig to the README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add BlogConfig to the README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613921475002">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1613921475002" />
-    <state x="278" y="21" key="CommitChangelistDialog2" timestamp="1613948571450">
+    <state x="278" y="21" key="CommitChangelistDialog2" timestamp="1613949419539">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="278" y="21" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1613948571450" />
+    <state x="278" y="21" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1613949419539" />
     <state x="508" y="209" key="FileChooserDialogImpl" timestamp="1613912832499">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="508" y="209" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1613912832499" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1613948577178">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1613949473004">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613948577178" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613949473004" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

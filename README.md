@@ -1,3 +1,9 @@
+# BlogSchema
+
+This is an example of how easy it is to use [Red](https://github.com/FCO/Red) and [Raku](https://raku.org)
+to develop a DB schema for a simple blog. It do not serves or generates the blog's pages.
+It's only the database schema.
+
 ```
 Usage:
   bin/blog.p6 create-db [--populate] -- Creates the database schema. If --populate, populates the DB with sample data.
