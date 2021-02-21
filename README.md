@@ -4,8 +4,8 @@ This is an example of how easy it is to use [Red](https://github.com/FCO/Red) an
 to develop a DB schema for a simple blog. It do not serves or generates the blog's pages.
 It's only the database schema.
 
+## Usage:
 ```
-Usage:
   bin/blog.p6 create-db [--populate] -- Creates the database schema. If --populate, populates the DB with sample data.
   bin/blog.p6 new-person --name=<Str> -- Creates a new person
   bin/blog.p6 list-people -- Lists existent people
