@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613950162544</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Usage">
+      <created>1613950244494</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1613950244494</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,25 +119,26 @@
     <MESSAGE value="Remove comments" />
     <MESSAGE value="Add BlogConfig to the README.md" />
     <MESSAGE value="Mention what it is" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mention what it is" />
+    <MESSAGE value="Usage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Usage" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613921475002">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1613921475002" />
-    <state x="278" y="21" key="CommitChangelistDialog2" timestamp="1613950162384">
+    <state x="278" y="21" key="CommitChangelistDialog2" timestamp="1613950244369">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="278" y="21" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1613950162384" />
+    <state x="278" y="21" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1613950244369" />
     <state x="508" y="209" key="FileChooserDialogImpl" timestamp="1613912832499">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="508" y="209" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1613912832499" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1613950163890">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1613950255088">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613950163890" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613950255088" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

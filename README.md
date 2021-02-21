@@ -24,6 +24,8 @@ It's only the database schema.
   bin/blog.p6 set-config <key> <value>
 ```
 
+## Models
+
 It uses a few models to describe a DB schema for a blog.
 
 - [Person](https://github.com/FCO/BlogSchema/blob/master/lib/Person.pm6)
