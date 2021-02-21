@@ -33,5 +33,8 @@ It uses a few models to describe a DB schema for a blog.
 
 - [Comment](https://github.com/FCO/BlogSchema/blob/master/lib/Comment.pm6)
   Describes a comment. It's related to a `Post` (`post`) and to a `Person` (`author`).
+
+- [BlogConfig](https://github.com/FCO/BlogSchema/blob/master/lib/BlogConfig.pm6)
+  Stores pairs (key/value) with the blog's configuration.
   
 It also has a script used to interact with the DB.
