@@ -4,13 +4,19 @@
   "version": "0.1",
   "perl": "6.*",
   "auth": "Write me!",
-  "depends": [],
+  "depends": [
+    "JSON::Fast"
+  ],
   "build-depends": [],
   "test-depends": [],
   "provides": {
+    "BlogConfig": "lib/BlogConfig.pm6",
     "Comment": "lib/Comment.pm6",
     "PostTag": "lib/PostTag.pm6",
-    "Tag": "lib/Tag.pm6"
+    "Tag": "lib/Tag.pm6",
+    "Person": "lib/Person.pm6",
+    "Post": "lib/Post.pm6",
+    "Schema": "lib/Schema.pm6"
   },
   "resources": [],
   "license": "Write me!",
