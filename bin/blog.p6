@@ -12,14 +12,21 @@ sub format-post($_) {
     - { .slug }
       { .title }
         { .subtitle }
-      Author:    { .author.name }
+      Author:    { .author.full-name }
       Created:   { .created // "something seems wrong" }
       Published: { .published // "not published" }
     { .body.indent: 4 }
     END
 }
 
-sub format-person($_) { "- { .name }" }
+sub format-person($_) {
+    qq:to/END/
+    - { .user-name }
+      Full name: { .full-name }
+      Email:     { .email }
+      { .about.?indent(4) // "" }
+    END
+}
 
 sub format-tag($_) { "- { .name }" }
 

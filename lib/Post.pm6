@@ -52,28 +52,41 @@ method ^populate(\post) {
             :title( "First blog post"              ),
             :subtitle("subtitle 1"                 ),
             :body(  "Very interesting first post"  ),
-            :author{ :name("User 1")               },
+            :author{
+                :full-name("User 1"),
+                :user-name<user1>,
+                :email<a@b.com>,
+                :about("Someone that loves to wright"),
+            },
             :post-tags[:tag{ :name<tag1>          }],
     ;
     post.^create:
             :title( "Second blog post"             ),
             :subtitle("subtitle 2"                 ),
             :body(  "Very interesting second post" ),
-            :author{ :name("User 1")               },
+            :author{ :full-name("User 1")          },
             :post-tags[:tag{ :name<tag1>          }],
     ;
     post.^create:
             :title( "Third blog post"              ),
             :subtitle("subtitle 3"                 ),
             :body(  "Very interesting Third post"  ),
-            :author{ :name("User 2")               },
+            :author{
+                :full-name("User 2"),
+                :user-name<user2>,
+                :email<c@b.com>,
+            },
             :post-tags[:tag{ :name<tag2>          }],
     ;
     post.^create:
             :title( "Fourth blog post"             ),
             :subtitle("subtitle 4"                 ),
             :body(  "Very interesting fourth post" ),
-            :author{ :name("User 3")               },
+            :author{
+                :full-name("User 3"),
+                :user-name<user3>,
+                :email<d@b.com>,
+            },
             :post-tags[:tag{ :name<tag1>          }],
     ;
     $first.publish;

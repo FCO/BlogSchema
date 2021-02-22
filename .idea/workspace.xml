@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="102ebf5c-4ff8-44cb-8770-64e4d5f06d72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META6.json" beforeDir="false" afterPath="$PROJECT_DIR$/META6.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/blog.p6" beforeDir="false" afterPath="$PROJECT_DIR$/bin/blog.p6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog.db" beforeDir="false" afterPath="$PROJECT_DIR$/blog.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Person.pm6" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Person.pm6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Post.pm6" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Post.pm6" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613951267403</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="New columns on Post">
+      <created>1613956743052</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1613956743052</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,35 +154,25 @@
     <MESSAGE value="Usage" />
     <MESSAGE value="Models" />
     <MESSAGE value="Fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
+    <MESSAGE value="New columns on Post" />
+    <option name="LAST_COMMIT_MESSAGE" value="New columns on Post" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613921475002">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1613921475002" />
-    <state x="278" y="21" key="CommitChangelistDialog2" timestamp="1613951267273">
+    <state x="278" y="21" key="CommitChangelistDialog2" timestamp="1613956742917">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="278" y="21" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1613951267273" />
+    <state x="278" y="21" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1613956742917" />
     <state x="508" y="209" key="FileChooserDialogImpl" timestamp="1613912832499">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="508" y="209" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1613912832499" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1613951268716">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1613956745363">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613951268716" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="perl6LineBreakpoint">
-          <url>file://$PROJECT_DIR$/lib/Post.pm6</url>
-          <line>54</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613956745363" />
   </component>
 </project>
