@@ -14,6 +14,7 @@ has DateTime    $.created   is column .= now;
 has DateTime    $.updated   is column .= now;
 has DateTime    $.deleted   is column{ :nullable };
 has DateTime    $.published is column{ :nullable };
+has Bool        $.draft     is column = True;
 has             $.author    is relationship({ .author-id }, :model<Person> );
 has             @.comments  is relationship({ .post-id   }, :model<Comment>);
 has             @.post-tags is relationship({ .post-id   }, :model<PostTag>);
@@ -24,7 +25,9 @@ method !slugify is before-create {
 }
 
 method is-published {
-    !self.deleted.defined and self.published.defined
+    !$.draft
+            &&  $.published.defined && $.published <= DateTime.now
+            && (!$.deleted.defined  || $.deleted   < $.published)
 }
 
 method delete {
@@ -34,6 +37,7 @@ method delete {
 
 method publish {
     self.published = DateTime.now;
+    self.draft = False;
     self.^save
 }
 

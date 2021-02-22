@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/blog.p6" beforeDir="false" afterPath="$PROJECT_DIR$/bin/blog.p6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog.db" beforeDir="false" afterPath="$PROJECT_DIR$/blog.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Person.pm6" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Person.pm6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Post.pm6" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Post.pm6" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613956743052</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="New columns on Person">
+      <created>1613958513411</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1613958513411</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,24 +161,25 @@
     <MESSAGE value="Models" />
     <MESSAGE value="Fixes" />
     <MESSAGE value="New columns on Post" />
-    <option name="LAST_COMMIT_MESSAGE" value="New columns on Post" />
+    <MESSAGE value="New columns on Person" />
+    <option name="LAST_COMMIT_MESSAGE" value="New columns on Person" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613921475002">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1613921475002" />
-    <state x="278" y="21" key="CommitChangelistDialog2" timestamp="1613956742917">
+    <state x="278" y="21" key="CommitChangelistDialog2" timestamp="1613958513296">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="278" y="21" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1613956742917" />
+    <state x="278" y="21" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1613958513296" />
     <state x="508" y="209" key="FileChooserDialogImpl" timestamp="1613912832499">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="508" y="209" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1613912832499" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1613956745363">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1613958515558">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613956745363" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613958515558" />
   </component>
 </project>

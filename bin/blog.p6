@@ -14,7 +14,7 @@ sub format-post($_) {
         { .subtitle }
       Author:    { .author.full-name }
       Created:   { .created // "something seems wrong" }
-      Published: { .published // "not published" }
+      Published: { .is-published ?? "published" !! "not published" }
     { .body.indent: 4 }
     END
 }
