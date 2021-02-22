@@ -6,7 +6,8 @@
   "auth": ":github<FCO>",
   "depends": [
     "Red",
-    "JSON::Fast"
+    "JSON::Fast",
+    "Text::Slugify"
   ],
   "build-depends": [],
   "test-depends": [],

@@ -9,7 +9,9 @@ my $*RED-DEBUG = so %*ENV<RED_DEBUG>;
 
 sub format-post($_) {
     qq:to/END/
-    - { .title }
+    - { .slug }
+      { .title }
+        { .subtitle }
       Author:    { .author.name }
       Created:   { .created // "something seems wrong" }
       Published: { .published // "not published" }
