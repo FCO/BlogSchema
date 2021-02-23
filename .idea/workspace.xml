@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="102ebf5c-4ff8-44cb-8770-64e4d5f06d72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/posts/first-blog-post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/posts/fourth-blog-post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/posts/second-blog-post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/posts/third-blog-post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/post.crotmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/blog.p6" beforeDir="false" afterPath="$PROJECT_DIR$/bin/blog.p6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/BlogConfig.pm6" beforeDir="false" afterPath="$PROJECT_DIR$/lib/BlogConfig.pm6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Post.pm6" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Post.pm6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/default-post-template.crotmp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/default-post-template.crotmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META6.json" beforeDir="false" afterPath="$PROJECT_DIR$/META6.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613961329082</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="more commands and generating from templates">
+      <created>1614040089097</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614040089097</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -176,24 +174,25 @@
     <MESSAGE value="New columns on Post" />
     <MESSAGE value="New columns on Person" />
     <MESSAGE value="is-published" />
-    <option name="LAST_COMMIT_MESSAGE" value="is-published" />
+    <MESSAGE value="more commands and generating from templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="more commands and generating from templates" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613921475002">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="432" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1613921475002" />
-    <state x="278" y="21" key="CommitChangelistDialog2" timestamp="1613961328966">
+    <state x="278" y="21" key="CommitChangelistDialog2" timestamp="1614040088955">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="278" y="21" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1613961328966" />
+    <state x="278" y="21" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1614040088955" />
     <state x="508" y="209" key="FileChooserDialogImpl" timestamp="1613912832499">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="508" y="209" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1613912832499" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1613961331503">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1614040091621">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613961331503" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1614040091621" />
   </component>
 </project>
