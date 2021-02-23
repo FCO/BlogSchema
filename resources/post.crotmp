@@ -1,0 +1,13 @@
+
+<:sub post($post, :$truncated = False)>
+    <$post.title>
+    <$post.subtitle>
+    Tags:   <@$post.tags><.name></@>
+    Author: <$post.author.full-name>
+    <?$truncated>
+        <$post.body>
+    </?>
+    <!$truncated>
+        <$post.body>
+    </!>
+</:>

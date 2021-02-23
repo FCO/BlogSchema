@@ -12,7 +12,6 @@ has Str         $.slug      is unique;
 has Str         $.body      is column;
 has DateTime    $.created   is column .= now;
 has DateTime    $.updated   is column .= now;
-has DateTime    $.deleted   is column{ :nullable };
 has DateTime    $.published is column{ :nullable };
 has Bool        $.draft     is column = True;
 has             $.author    is relationship({ .author-id }, :model<Person> );
@@ -27,7 +26,6 @@ method !slugify is before-create {
 method is-published {
     !$.draft
             &&  $.published.defined && $.published <= DateTime.now
-            && (!$.deleted.defined  || $.deleted   < $.published)
 }
 
 method delete {
@@ -48,7 +46,7 @@ method !update is before-update {
 method tags { @.post-tags>>.tag }
 
 method get-template {
-    self.template // BlogConfig.default-post-template
+    self.template // BlogConfig.get<default-post-template>.head.value
 }
 
 method ^populate(\post) {

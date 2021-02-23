@@ -87,7 +87,7 @@ multi MAIN("list-posts", Str :$tag, Bool :$published) {
         blog-schema.Post.^all
     }
     if $published {
-        $seq .= grep: so *.published
+        $seq .= grep: *.is-published
     }
     .&format-post.say for $seq<>
 }
@@ -148,7 +148,11 @@ multi MAIN("get-config") {
 }
 
 multi MAIN("get-config", Str $key) {
-    .say for blog-schema.BlogConfig.get($key).map: { "{ .key } => { .value }" }
+    .say for blog-schema.BlogConfig.get{$key}.map: { "{ .key } => { .value }" }
+}
+
+multi MAIN("rm-config", Str $key) {
+    blog-schema.BlogConfig.^load(:$key).^delete
 }
 
 multi MAIN("set-config", Str $key, Str $value) {
@@ -163,7 +167,26 @@ multi MAIN("set-config", Str $key, Str $value) {
     }
 }
 
-#multi MAIN("generate") {
-#   say .get-template for blog-schema.Post.^all
-##    render-template .get-template, $_ for blog-schema.Post.^all
-#}
+multi MAIN("generate") {
+    blog-schema.BlogConfig.required: <default-post-template posts-path>;
+    use Cro::WebApp::Template;
+    template-location blog-schema.BlogConfig.get("templates-path") // "resources/";
+    my $dir = blog-schema.BlogConfig.get("posts-path").IO
+            // die "posts-path not defined";
+    mkdir $dir unless $dir.e;
+
+    for blog-schema.Post.^all {
+        my $path = $dir.child: "{ .slug }.html";
+        note "Generating '{ $path.relative }'";
+        $path.spurt: render-template(.get-template, %(:post($_)))
+    }
+}
+
+multi MAIN("config-wizard") {
+    my @confs = <templates-path default-post-template posts-path>;
+    for @confs -> $key {
+        my $default = blog-schema.BlogConfig.get($key);
+        my $value = prompt "{ $key }{ $default ?? " [{ $default }]" !! "" }: ";
+        MAIN("set-config", $key, $value) if $value
+    }
+}
