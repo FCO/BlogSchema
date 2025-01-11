@@ -6,23 +6,50 @@ It only creates the database schema and provides introspection into the database
 
 ## Usage:
 ```
-  bin/blog.p6 create-db [--populate] -- Creates the database schema. If --populate, populates the DB with sample data.
-  bin/blog.p6 new-person --name=<Str> -- Creates a new person
-  bin/blog.p6 list-people -- Lists existent people
-  bin/blog.p6 new-post --author=<Str> --title=<Str> [--publish] -- Creates a new post. Reads STDIN to get the post's body.
-  bin/blog.p6 publish-post <post> -- Publishes a given post.
-  bin/blog.p6 edit-post <post> [--author=<Str>] [--title=<Str>] [--tag=<Str>] -- Edits a given post.
-  bin/blog.p6 list-posts [--tag=<Str>] [--published] -- Lists all the posts or all posts with a given tag. It can filter only the published posts.
-  bin/blog.p6 comment --author=<Str> --post=<UInt> -- Adds a new comment.
-  bin/blog.p6 list-comments --post=<UInt> -- Lists all comments. Filter by post.
-  bin/blog.p6 list-comments --author=<Str> -- Lists all comments. Filter by author
-  bin/blog.p6 create-tag <name> -- Creates a new tag
-  bin/blog.p6 list-tags [--post=<UInt>] -- Lists all tags. Filter by post.
-  bin/blog.p6 search-posts <key-word> [--published] -- Searches by a post.
-  bin/blog.p6 get-config
-  bin/blog.p6 get-config <key>
-  bin/blog.p6 set-config <key> <value>
+Usage:
+  bin/blog create-db [--populate] -- Creates the database schema. If --populate, populates the DB with sample data.
+  bin/blog new-person --name=<Str> -- Creates a new person
+  bin/blog list-people -- Lists existent people
+  bin/blog new-post --author=<Str> --title=<Str> [--publish] -- Creates a new post. Reads STDIN to get the post's body.
+  bin/blog publish-post <post> -- Publishes a given post.
+  bin/blog edit-post <post> [--author=<Str>] [--title=<Str>] [--tag=<Str>] -- Edits a given post.
+  bin/blog list-posts [--tag=<Str>] [--published] -- Lists all the posts or all posts with a given tag. It can filter only the published posts.
+  bin/blog comment --author=<Str> --post[=UInt] -- Adds a new comment.
+  bin/blog list-comments --post[=UInt] -- Lists all comments. Filter by post.
+  bin/blog list-comments --author=<Str> -- Lists all comments. Filter by author
+  bin/blog create-tag <name> -- Creates a new tag
+  bin/blog list-tags [--post[=UInt]] -- Lists all tags. Filter by post.
+  bin/blog search-posts <key-word> [--published] -- Searches by a post.
+  bin/blog get-config
+  bin/blog get-config <key>
+  bin/blog rm-config <key>
+  bin/blog set-config <key> <value>
+  bin/blog generate
+  bin/blog config-wizard
+  bin/blog run-web
 ```
+
+### Fast run:
+```
+❯ zef install .
+===> Staging BlogSchema:ver<0.1>:auth<:github<FCO>>
+===> Staging [OK] for BlogSchema:ver<0.1>:auth<:github<FCO>>
+===> Testing: BlogSchema:ver<0.1>:auth<:github<FCO>>
+===> Testing [OK] for BlogSchema:ver<0.1>:auth<:github<FCO>>
+===> Installing: BlogSchema:ver<0.1>:auth<:github<FCO>>
+
+1 bin/ script [blog] installed to:
+/Users/fernando/.rakubrew/versions/moar-blead/install/share/perl6/site/bin
+❯ blog create-db --populate
+❯ blog run-web
+adding POST post
+adding GET post/<id>
+adding POST post-list
+adding GET post-list
+Listening at http://0.0.0.0:4000
+```
+
+
 
 ## Models:
 

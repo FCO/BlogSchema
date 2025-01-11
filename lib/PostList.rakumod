@@ -8,7 +8,7 @@ model PostList does Cromponent {
 	has UInt $.num = 10;
 	has      $.list = Post.^all.grep(*.published).head($!num).Seq;
 
-	method LOAD(|) { PostList.new }
+	method LOAD { PostList.new }
 	method RENDER {
 		Q:to/END/
 			<div class="container">

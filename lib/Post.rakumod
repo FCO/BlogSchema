@@ -33,7 +33,8 @@ model Post is rw does Cromponent {
 
 	method preview {
 		model PostPreview does Cromponent {
-			has $.post is required;
+			has     $.post is required;
+			has Str $.read-more = BlogConfig.get('read-more') // "read more...";
 
 			method RENDER {
 				Q:to/END/
@@ -46,7 +47,7 @@ model Post is rw does Cromponent {
 						hx-target="main"
 						hx-swap="innerHTML"
 					>
-						Leia mais..
+						<.read-more>
 					</a>
 				</article>
 				END

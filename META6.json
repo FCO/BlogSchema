@@ -21,7 +21,8 @@
     "PostList": "lib/PostList.rakumod",
     "Schema": "lib/Schema.rakumod",
     "Header": "lib/Header.rakumod",
-    "Footer": "lib/Footer.rakumod"
+    "Footer": "lib/Footer.rakumod",
+    "HeaderLink": "lib/HeaderLink.rakumod"
   },
   "resources": [],
   "license": "Artistic",

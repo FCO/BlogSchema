@@ -1,8 +1,10 @@
 use Cromponent;
+use HeaderLink;
 
 class Header does Cromponent {
-	has Str $.title = "title";
-	has Str $.description = "description";
+	has Str        $.title = "title";
+	has Str        $.description = "description";
+	has HeaderLink @.links = HeaderLink.^all;
 
 	method RENDER {
 		Q:to/END/
@@ -11,36 +13,9 @@ class Header does Cromponent {
 			<p><.description></p>
 			<nav>
 				<ul>
-					<li>
-						<a
-							href="/post_list"
-							hx-get="/post_list"
-							hx-target="main"
-							hx-swap="innerHTML"
-						>
-							Home
-						</a>
-					</li>
-					<li>
-						<a
-							href="/sobre"
-							hx-get="/sobre"
-							hx-target="main"
-							hx-swap="innerHTML"
-						>
-							Sobre
-						</a>
-					</li>
-					<li>
-						<a
-							href="/contato"
-							hx-get="/contato"
-							hx-target="main"
-							hx-swap="innerHTML"
-						>
-							Contato
-						</a>
-					</li>
+					<@.links>
+						<&HTML($_)>
+					</@>
 				</ul>
 			</nav>
 		</header>
