@@ -2,7 +2,7 @@
 use Red;
 use Schema;
 
-my $*RED-DB = database "SQLite", :database<./blog.db>;
+red-defaults "SQLite", :database<./blog.db>;
 
 my %*SUB-MAIN-OPTS = :named-anywhere;
 my $*RED-DEBUG = so %*ENV<RED_DEBUG>;
@@ -188,5 +188,38 @@ multi MAIN("config-wizard") {
         my $default = blog-schema.BlogConfig.get($key);
         my $value = prompt "{ $key }{ $default ?? " [{ $default }]" !! "" }: ";
         MAIN("set-config", $key, $value) if $value
+    }
+}
+
+multi MAIN("run-web") {
+    use Cro::HTTP::Router;
+    use Cro::HTTP::Server;
+    use Cro::WebApp::Template;
+    use Cromponent;
+    use PostList;
+    use Post;
+
+    my $routes = route {
+        template-location "resources/";
+        get -> { template "web.crotmp", blog-schema }
+	get -> "css" { static "resources/styles.css" }
+	Post.^add-cromponent-routes;
+	#PostList.^add-cromponent-routes;
+    }
+    my UInt $port = blog-schema.BlogConfig.get("port") // 4000;
+    my Cro::Service $http = Cro::HTTP::Server.new(
+        http => <1.1>,
+        host => "0.0.0.0",
+        port => $port,
+        application => $routes,
+    );
+    $http.start;
+    say "Listening at http://0.0.0.0:$port";
+    react {
+        whenever signal(SIGINT) {
+            say "Shutting down...";
+            $http.stop;
+            done;
+        }
     }
 }

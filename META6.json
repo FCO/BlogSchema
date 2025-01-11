@@ -12,13 +12,16 @@
   "build-depends": [],
   "test-depends": [],
   "provides": {
-    "BlogConfig": "lib/BlogConfig.pm6",
-    "Comment": "lib/Comment.pm6",
-    "PostTag": "lib/PostTag.pm6",
-    "Tag": "lib/Tag.pm6",
-    "Person": "lib/Person.pm6",
-    "Post": "lib/Post.pm6",
-    "Schema": "lib/Schema.pm6"
+    "BlogConfig": "lib/BlogConfig.rakumod",
+    "Comment": "lib/Comment.rakumod",
+    "PostTag": "lib/PostTag.rakumod",
+    "Tag": "lib/Tag.rakumod",
+    "Person": "lib/Person.rakumod",
+    "Post": "lib/Post.rakumod",
+    "PostList": "lib/PostList.rakumod",
+    "Schema": "lib/Schema.rakumod",
+    "Header": "lib/Header.rakumod",
+    "Footer": "lib/Footer.rakumod"
   },
   "resources": [],
   "license": "Artistic",

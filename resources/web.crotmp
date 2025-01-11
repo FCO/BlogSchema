@@ -1,0 +1,12 @@
+<:use Boilerplate>
+<:use Header>
+<:use Footer>
+<:use PostList>
+
+<|Boilerplate(:htmx, :title(.BlogConfig.get('blog-title')), :style-sheets('/css'))>
+	<&Header(:title(.BlogConfig.get('blog-title')), :description(.BlogConfig.get('blog-description')))>
+	<main>
+		<&PostList(:num(10))>
+	</main>
+	<&Footer(:title(.BlogConfig.get('blog-title')))>
+</|>

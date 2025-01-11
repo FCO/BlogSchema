@@ -22,4 +22,6 @@ method ^populate(\blogConf) {
     blogConf.^create: :key<templates-path>, :value<resources/>;
     blogConf.^create: :key<default-post-template>, :value<default-post-template.crotmp>;
     blogConf.^create: :key<posts-path>, :value<posts>;
+    blogConf.^create: :key<blog-title>, :value('The BlogSchema');
+    blogConf.^create: :key<blog-description>, :value('Testing blogs using Raku, Red, Cro and Cromponent');
 }
