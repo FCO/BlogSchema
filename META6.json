@@ -19,6 +19,7 @@
     "Person": "lib/Person.rakumod",
     "Post": "lib/Post.rakumod",
     "PostList": "lib/PostList.rakumod",
+    "PostSearch": "lib/PostSearch.rakumod",
     "Schema": "lib/Schema.rakumod",
     "Header": "lib/Header.rakumod",
     "Footer": "lib/Footer.rakumod",

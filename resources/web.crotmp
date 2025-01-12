@@ -1,10 +1,12 @@
 <:use Boilerplate>
 <:use Header>
 <:use Footer>
+<:use PostSearch>
 <:use PostList>
 
 <|Boilerplate(:htmx, :title(.BlogConfig.get('blog-title')), :style-sheets('/css'))>
 	<&Header(:title(.BlogConfig.get('blog-title')), :description(.BlogConfig.get('blog-description')))>
+	<&PostSearch>
 	<main>
 		<&PostList(:num(10))>
 	</main>

@@ -198,6 +198,7 @@ multi MAIN("run-web") {
     use Cro::WebApp::Template;
     use Cromponent;
     use PostList;
+    use PostSearch;
     use Post;
 
     my $routes = route {
@@ -205,6 +206,7 @@ multi MAIN("run-web") {
         get -> { template "web.crotmp", blog-schema }
 	get -> "css" { static "resources/styles.css" }
 	Post.^add-cromponent-routes;
+	PostSearch.^add-cromponent-routes;
 	PostList.^add-cromponent-routes;
     }
     my UInt $port = blog-schema.BlogConfig.get("port") // 4000;
