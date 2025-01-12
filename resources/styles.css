@@ -233,3 +233,33 @@ footer p {
 .search button:hover {
     background: #005f99;
 }
+
+.tags {
+    margin-top: 2rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag-list li a {
+    display: inline-block;
+    background: #007acc;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.tag-list li a:hover {
+    background: #005f99;
+}

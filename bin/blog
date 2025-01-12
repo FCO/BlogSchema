@@ -200,6 +200,7 @@ multi MAIN("run-web") {
     use PostList;
     use PostSearch;
     use Post;
+    use Tag;
 
     my $routes = route {
         template-location "resources/";
@@ -208,6 +209,7 @@ multi MAIN("run-web") {
 	Post.^add-cromponent-routes;
 	PostSearch.^add-cromponent-routes;
 	PostList.^add-cromponent-routes;
+	Tag.^add-cromponent-routes;
     }
     my UInt $port = blog-schema.BlogConfig.get("port") // 4000;
     my Cro::Service $http = Cro::HTTP::Server.new(

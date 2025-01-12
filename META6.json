@@ -16,6 +16,7 @@
     "Comment": "lib/Comment.rakumod",
     "PostTag": "lib/PostTag.rakumod",
     "Tag": "lib/Tag.rakumod",
+    "TagList": "lib/TagList.rakumod",
     "Person": "lib/Person.rakumod",
     "Post": "lib/Post.rakumod",
     "PostList": "lib/PostList.rakumod",
