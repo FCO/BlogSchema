@@ -1,0 +1,10 @@
+services:
+  blog:
+    build: .
+    ports:
+      -  4000:4000
+    develop:
+      watch:
+        - action: sync+restart
+          path: .
+          target: /app

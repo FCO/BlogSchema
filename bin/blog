@@ -33,7 +33,7 @@ sub format-tag($_) { "- { .name }" }
 
 #| Creates the database schema. If --populate, populates the DB with sample data.
 multi MAIN("create-db", Bool :$populate) {
-    blog-schema.create;
+    blog-schema.drop.create;
     blog-schema.models.values.map: *.^populate if $populate
 }
 
@@ -199,6 +199,7 @@ multi MAIN("run-web") {
     use Cromponent;
     use PostList;
     use PostSearch;
+    use PostCreate;
     use Post;
     use Tag;
 
@@ -210,6 +211,7 @@ multi MAIN("run-web") {
 	PostSearch.^add-cromponent-routes;
 	PostList.^add-cromponent-routes;
 	Tag.^add-cromponent-routes;
+	PostCreate.^add-cromponent-routes;
     }
     my UInt $port = blog-schema.BlogConfig.get("port") // 4000;
     my Cro::Service $http = Cro::HTTP::Server.new(

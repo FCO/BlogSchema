@@ -19,6 +19,7 @@
     "TagList": "lib/TagList.rakumod",
     "Person": "lib/Person.rakumod",
     "Post": "lib/Post.rakumod",
+    "PostCreate": "lib/PostCreate.rakumod",
     "PostList": "lib/PostList.rakumod",
     "PostSearch": "lib/PostSearch.rakumod",
     "Schema": "lib/Schema.rakumod",
