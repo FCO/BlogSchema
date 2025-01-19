@@ -1,33 +1,38 @@
 {
-  "name": "BlogSchema",
-  "description": "BlogSchema using RedORM",
-  "version": "0.1",
-  "perl": "6.*",
   "auth": ":github<FCO>",
+  "build-depends": [
+  ],
   "depends": [
     "Red",
     "Cro::WebApp::Template",
     "Text::Slugify"
   ],
-  "build-depends": [],
-  "test-depends": [],
+  "description": "BlogSchema using RedORM",
+  "license": "Artistic",
+  "name": "Tag",
+  "perl": "6.*",
   "provides": {
     "BlogConfig": "lib/BlogConfig.rakumod",
     "Comment": "lib/Comment.rakumod",
-    "PostTag": "lib/PostTag.rakumod",
-    "Tag": "lib/Tag.rakumod",
-    "TagList": "lib/TagList.rakumod",
+    "Footer": "lib/Footer.rakumod",
+    "Header": "lib/Header.rakumod",
+    "HeaderLink": "lib/HeaderLink.rakumod",
     "Person": "lib/Person.rakumod",
     "Post": "lib/Post.rakumod",
     "PostCreate": "lib/PostCreate.rakumod",
     "PostList": "lib/PostList.rakumod",
     "PostSearch": "lib/PostSearch.rakumod",
+    "PostTag": "lib/PostTag.rakumod",
     "Schema": "lib/Schema.rakumod",
-    "Header": "lib/Header.rakumod",
-    "Footer": "lib/Footer.rakumod",
-    "HeaderLink": "lib/HeaderLink.rakumod"
+    "Tag": "lib/Tag.rakumod",
+    "TagList": "lib/TagList.rakumod"
   },
-  "resources": [],
-  "license": "Artistic",
-  "source-url": "https://github.com/FCO/BlogSchema"
+  "resources": [
+  ],
+  "source-url": "https://github.com/FCO/BlogSchema.git",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "0.1"
 }

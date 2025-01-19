@@ -23,6 +23,7 @@ model HeaderLink does Cromponent {
 
 	method ^populate(\link) {
 		link.^create: :name<Home>, :url</post-list>;
+		link.^create: :name("Create Post"), :url</post-create>;
 	}
 }
 

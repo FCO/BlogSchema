@@ -16,21 +16,22 @@ class PostCreate does Cromponent {
 			hx-target="main"
 			hx-on::after-request="this.reset()"
 		>
-			<input type="text" name="title" value="<.title>"><br>
-			<textarea name="body" width="100%" height="100%"><.body></textarea>
+			<input type="text" name="title" <?.title>value="<.title>"</?>><br>
+			<textarea name="body" cols="80" rows="15"><?.body><.body></?></textarea>
 			<input type="submit">
 		</form>
 		END
 	}
 
-	method create(:$title, :$body) is accessible{ :http-method<POST>, :returns-cromponent } {
+	method create(Str :$title, Str :$body) is accessible{ :http-method<POST>, :returns-cromponent } {
 		Post.^create: :$title, :$body
 	}
 
-	method edit(:$title, :$body) is accessible{ :http-method<POST>, :returns-cromponent } {
+	method edit(Str :$title, Str :$body) is accessible{ :http-method<POST>, :returns-cromponent } {
 		$!post.title = $_ with $title;
 		$!post.body  = $_ with $body;
-		$!post.^save.^refresh
+		$!post.^save;
+		$!post
 	}
 }
 

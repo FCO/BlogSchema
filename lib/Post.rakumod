@@ -19,11 +19,19 @@ model Post is rw does Cromponent {
 	has             @.post-tags is relationship({ .post-id   }, :model<PostTag>);
 	has Str         $.template  is column{ :nullable };
 
-	method LOAD($slug) { Post.^load: :$slug }
+	method LOAD(Str $slug) { Post.^load: :$slug }
 
 	method RENDER {
 		Q:to/END/
 		<div class="post">
+			<a
+				href="/post-create/<.id>"
+				hx-get="/post-create/<.id>"
+				hx-target="main"
+				hx-target="main"
+			>
+				edit
+			</a>
 			<h2><.title></h2>
 			<p><.subtitle></p>
 			<&HTML(.body)>
